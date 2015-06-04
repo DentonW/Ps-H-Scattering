@@ -1,0 +1,21 @@
+Number of quadrature points for the various matrix elements
+
+Long-long: r1 Lag, r2 Leg, r2 Lag, r3 Leg, r3 Lag, r12 Leg, r13 Leg, phi23
+75 40 40 40 40 25 25 25
+Long-long 2/r23 term: r1 Lag, r2 Leg, r2 Lag, r3 Leg, r3 Lag, phi12, r13 Leg, r23 Leg
+75 40 40 40 40 25 25 25
+
+Short-long with qi = 0: r1 Lag, r2 Leg, r2 Lag, r3 Leg, r3 Lag, r12 Leg, r13 Leg
+100 65 45 65 45 45 45 45
+Short-long 2/r23 term with qi = 0: r1 Lag, r2 Leg, r2 Lag, r3 Leg, r3 Lag, r12 Leg, phi13, r23 Leg
+115 65 45 65 60 45 45 45
+Short-long full with qi > 0: r1 Lag, r2 Leg, r2 Lag, r3 Leg, r3 Lag, r12 Leg, r13 Leg, phi23
+100 65 45 65 45 45 45 45
+
+r2 and r3 integration cusp unimportant
+100.0
+100.0
+Nonlinear parameter mu
+0.7
+Power of shielding function
+5

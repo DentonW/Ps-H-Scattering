@@ -1,0 +1,30 @@
+Value of Omega from equation (3.15) of Armour and Humberston's paper (-1 for no terms):
+7
+L-value (0 for S-wave, 1 for P-wave, etc.)
+2
+Values of Alpha, Beta and Gamma:
+0.397
+0.376
+0.962
+Integration method: (0 for Drake/Yan no asym, 1 for Drake/Yan asym)
+1
+Maximum value of M12, M23 and M31 to use for equations () and () of Drake and Yan's paper (M23 and M31 MUST be greater than M12):
+35 40 40
+Maximum value of p to use for equation (8) of Drake and Yan's paper:
+150
+0 for Singlet or 1 for Triplet:
+0
+Eigenvalues to output (minimum and maximum):
+1 1
+Show all energies? (0 for no, 1 for yes)
+1
+Optimize nonlinear parameters? (0 for no, 1 for yes)
+0
+Eigenvalue to optimize (if above is 1):
+1
+Maximum iterations for optimization:
+75
+Use Peter Van Reeth's ordering?
+1
+Use LAPACK or Pachucki dsygv routine? (1 = LAPACK, 2 = Pachucki)
+1

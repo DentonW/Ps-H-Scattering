@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{E5AD68F5-7139-4EED-89C2-954252B8F75A}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" FixedFormLineLength="fixedLength132" OpenMP="OpenMPSequentialCode" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="libiomp5md.lib mkl_lapack95.lib mkl_intel_c.lib mkl_intel_thread.lib mkl_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" FixedFormLineLength="fixedLength132"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" AdditionalDependencies="libiomp5md.lib mkl_lapack95.lib mkl_intel_c.lib mkl_intel_thread.lib mkl_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="DrakeYan97">
+		<File RelativePath=".\GeneralAsymptotic\3j.f90"/>
+		<File RelativePath=".\GeneralAsymptotic\6j.f90"/>
+		<File RelativePath=".\GeneralAsymptotic\Asymptotic.f90"/>
+		<File RelativePath=".\GeneralAsymptotic\DrakeYan97.f90"/></Filter>
+		<Filter Name="Pachucki">
+		<File RelativePath=".\Pachucki\dilog.f90"/>
+		<File RelativePath=".\Pachucki\gamma.f"/>
+		<File RelativePath=".\Pachucki\idx.f"/>
+		<File RelativePath=".\Pachucki\invsg.f90"/>
+		<File RelativePath=".\Pachucki\leq1s.f90"/>
+		<File RelativePath=".\Pachucki\ydplog.f90"/>
+		<File RelativePath=".\Pachucki\ygam.f90"/>
+		<File RelativePath=".\Pachucki\ygam1s.f90"/></Filter>
+		<File RelativePath=".\HylleraasIntegral.f90"/>
+		<File RelativePath=".\HylleraasIntegralRecursion.f90"/>
+		<File RelativePath=".\PsHMain.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
