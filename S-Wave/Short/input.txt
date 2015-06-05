@@ -1,0 +1,46 @@
+Value of Omega from equation (3.15) of Armour and Humberston's paper:
+1
+Values of Alpha, Beta and Gamma:
+0.5
+0.6
+1.1
+Maximum value of q to use for equations (5) and (6) of Drake and Yan's paper:
+30
+Integration method: (0 for Drake/Yan no asym, 1 for Drake/Yan asym, 2 for Pachucki recursion)
+2
+Maximum value of p to use for equation (8) of Drake and Yan's paper:
+150
+0 for Singlet or 1 for Triplet:
+0
+Eigenvalues to output (minimum and maximum):
+1 10
+Show all energies? (0 for no, 1 for yes)
+1
+Optimize nonlinear parameters? (0 for no, 1 for yes)
+0
+Eigenvalue to optimize (if above is 1):
+1
+Maximum iterations for optimization:
+50
+Use Peter Van Reeth's ordering?
+1
+Use LAPACK or Pachucki dsygv routine? (1 = LAPACK, 2 = Pachucki)
+1
+Use grad-grad or Laplacian formalism? (1 = grad-grad, 2 = Laplacian)
+1
+
+
+Singlet
+0.586
+0.580
+1.093
+
+Triplet
+0.323
+0.334
+0.975
+
+0.302
+0.314
+0.997
+
