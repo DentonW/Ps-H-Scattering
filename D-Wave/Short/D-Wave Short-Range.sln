@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "D-Wave Short-Range", "D-Wave Short-Range.vfproj", "{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F988CFBC-A668-4291-AEDE-7AD6CB754D71} = {F988CFBC-A668-4291-AEDE-7AD6CB754D71}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minimization", "Minimization\Minimization.vcxproj", "{F988CFBC-A668-4291-AEDE-7AD6CB754D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}.Debug|Win32.Build.0 = Debug|Win32
+		{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}.Release|Win32.ActiveCfg = Release|Win32
+		{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}.Release|Win32.Build.0 = Release|Win32
+		{F988CFBC-A668-4291-AEDE-7AD6CB754D71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F988CFBC-A668-4291-AEDE-7AD6CB754D71}.Debug|Win32.Build.0 = Debug|Win32
+		{F988CFBC-A668-4291-AEDE-7AD6CB754D71}.Release|Win32.ActiveCfg = Release|Win32
+		{F988CFBC-A668-4291-AEDE-7AD6CB754D71}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

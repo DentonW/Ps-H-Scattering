@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{8BF7AFE9-467C-4AC5-BC80-DFD395D97366}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" FixedFormLineLength="fixedLength132" WarnInterfaces="true" RealKIND="realKIND8" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="Debug;C:\Program Files (x86)\GnuWin32\lib;Debug;C:\Coding\gsl\1.8\gsl-1.8\VC8\libgslcblas\Release-StaticLib;C:\Coding\gsl\1.8\gsl-1.8\VC8\libgsl\Release-StaticLib" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="10000000" AdditionalDependencies="libgslcblas.lib libgsl.lib Minimization.lib mkl_lapack95.lib mkl_intel_c.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" FixedFormLineLength="fixedLength132" OpenMP="OpenMPParallelCode" WarnInterfaces="true" RealKIND="realKIND8" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="Release;C:\Program Files (x86)\GnuWin32\lib;Debug;C:\Coding\gsl\1.8\gsl-1.8\VC8\libgslcblas\Release-StaticLib;C:\Coding\gsl\1.8\gsl-1.8\VC8\libgsl\Release-StaticLib" SubSystem="subSystemConsole" AdditionalDependencies="libgslcblas.lib libgsl.lib Minimization.lib mkl_lapack95.lib mkl_intel_c.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd">
+		<File RelativePath=".\ModifiedZeta.h"/></Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\Direct.f90"/>
+		<File RelativePath=".\Exchange.f90"/>
+		<File RelativePath=".\HylleraasIntegral.f90"/>
+		<File RelativePath=".\lu.f90"/>
+		<File RelativePath=".\PsHMain.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
