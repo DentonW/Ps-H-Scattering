@@ -1,0 +1,2097 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     75112,       2088]
+NotebookOptionsPosition[     71736,       1966]
+NotebookOutlinePosition[     72161,       1982]
+CellTagsIndexPosition[     72118,       1979]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"p1", "=", 
+  RowBox[{
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"3", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "2"}], "+", 
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+      RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "6"}], "+", 
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+   RowBox[{"\[Rho]", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"3", "-", 
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+      RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.5676583567469997`*^9, 3.56765836416*^9}, 
+   3.567658599248*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "2"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "6"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"3", "-", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.5676583595620003`*^9, 3.56765836451*^9}, 
+   3.567658602844*^9, 3.59216937766652*^9, 3.5921697360343413`*^9, 
+   3.5921697845513163`*^9, 3.593105951994747*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p2", "=", 
+  RowBox[{
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"3", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}], "-", "2"}], ")"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+      RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}], "-", "6"}], ")"}], " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+   RowBox[{"\[Rho]", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[Kappa]", "2"], " ", 
+          SuperscriptBox["\[Rho]", "2"]}], "-", "3"}], ")"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+      RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.567658366392*^9, 3.567658398465*^9}, {
+   3.5676584703450003`*^9, 3.5676585269040003`*^9}, 3.56765860149*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "2"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "6"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "3"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+     RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.567658369296*^9, 3.567658431051*^9, {3.5676584772*^9, 3.567658527707*^9}, 
+   3.567658603773*^9, 3.5921693777935195`*^9, 3.5921697361173353`*^9, 
+   3.5921697846763163`*^9, 3.5931059521011925`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p2", "=", 
+  RowBox[{"Simplify", "[", "p2", "]"}]}]], "Input",
+ CellChangeTimes->{{3.567658507299*^9, 3.567658516422*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "2"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "6"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"3", "-", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.5676585092939997`*^9, 3.5676585294820004`*^9}, 
+   3.567658604493*^9, 3.5921693779455194`*^9, 3.592169736292341*^9, 
+   3.592169784784311*^9, 3.5931059522759895`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p1", "\[Equal]", "p2"}]], "Input",
+ CellChangeTimes->{{3.567658432344*^9, 3.567658433158*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{
+  3.567658433469*^9, {3.567658478598*^9, 3.567658530145*^9}, 
+   3.567658605176*^9, 3.592169377972519*^9, 3.5921697363213415`*^9, 
+   3.5921697848083105`*^9, 3.5931059523013787`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.567659744881*^9, 3.5676597449969997`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["S-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598078450003`*^9, 3.567659811052*^9}, 
+   3.567661871013*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"0", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], " ", "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"0", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"0", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659751896*^9, 3.567659756623*^9}, {3.5676597939440002`*^9, 
+   3.567659800832*^9}, {3.567661873073*^9, 3.567661881608*^9}, 
+   3.5921693662845297`*^9}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"2", " ", "\[Kappa]", " ", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+   RowBox[{
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}], " ", 
+    RowBox[{
+     SuperscriptBox["f", "\[Prime]\[Prime]",
+      MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+  RowBox[{"2", " ", "\[Kappa]", " ", "\[Rho]"}]]], "Output",
+ CellChangeTimes->{{3.567659798133*^9, 3.5676598012209997`*^9}, 
+   3.5676618823640003`*^9, 3.5921693780375247`*^9, 3.592169736883336*^9, 
+   3.592169784892311*^9, 3.5931059526617103`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["P-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598078450003`*^9, 3.567659811052*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"1", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"1", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"1", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659751896*^9, 3.567659756623*^9}, {3.5676597939440002`*^9, 
+   3.567659800832*^9}, 3.5921693679485245`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "2"], " ", 
+    SuperscriptBox["\[Rho]", "3"]}]]}]], "Output",
+ CellChangeTimes->{{3.567659798133*^9, 3.5676598012209997`*^9}, 
+   3.5921693785755186`*^9, 3.5921697373623347`*^9, 3.5921697851883106`*^9, 
+   3.593105953236885*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["D-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"2", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], " ", "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"2", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"2", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, 3.5921693692765284`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "6"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"3", "-", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "3"], " ", 
+    SuperscriptBox["\[Rho]", "4"]}]]}]], "Output",
+ CellChangeTimes->{3.567659803545*^9, 3.5921693794105186`*^9, 
+  3.5921697382893395`*^9, 3.5921697856883106`*^9, 3.593105954203635*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["F-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.567661890325*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"3", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"3", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"3", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"3", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"3", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, {3.56766189196*^9, 
+   3.567661897913*^9}, 3.592169371086523*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "4"], " ", 
+    SuperscriptBox["\[Rho]", "5"]}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"45", "-", 
+          RowBox[{"21", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{"15", "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "5"}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "15"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.56766189963*^9, 3.567662876146*^9, 3.592169380704523*^9, 
+  3.5921697395623393`*^9, 3.592169786414315*^9, 3.5931059555151024`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", "2", " ", 
+  SuperscriptBox["\[Kappa]", "4"], " ", 
+  SuperscriptBox["\[Rho]", "5"]}]], "Input",
+ CellChangeTimes->{{3.567662883097*^9, 3.567662883814*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"45", "-", 
+        RowBox[{"21", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"3", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"15", "-", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "5"}], "+", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "15"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.567662884492*^9, 3.5921693807395177`*^9, 
+  3.5921697395983343`*^9, 3.592169786439316*^9, 3.5931059555531855`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["G-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.567661890325*^9, 3.5921694044485064`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"4", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"4", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"4", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"4", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"4", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, {3.56766189196*^9, 
+   3.567661897913*^9}, 3.592169371086523*^9, {3.5921694169244995`*^9, 
+   3.5921694234995017`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "5"], " ", 
+    SuperscriptBox["\[Rho]", "6"]}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"5", " ", 
+        RowBox[{"(", 
+         RowBox[{"84", "-", 
+          RowBox[{"39", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{"420", "-", 
+          RowBox[{"55", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"105", "-", 
+          RowBox[{"45", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"5", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{"21", "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.5921694256265*^9, 3.5921697408333335`*^9, 
+  3.5921697867343097`*^9, 3.5931059568285217`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", "2", " ", 
+  SuperscriptBox["\[Kappa]", "5"], " ", 
+  SuperscriptBox["\[Rho]", "6"]}]], "Input",
+ CellChangeTimes->{{3.592169717956351*^9, 3.592169723721347*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"5", " ", 
+      RowBox[{"(", 
+       RowBox[{"84", "-", 
+        RowBox[{"39", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"420", "-", 
+        RowBox[{"55", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"105", "-", 
+        RowBox[{"45", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"5", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"21", "-", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.5921697408693385`*^9, 3.592169786771311*^9, 
+  3.5931059568675823`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["H-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.567661890325*^9, 3.5921694078395033`*^9, 3.5921694390524883`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"Laplacian", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"FunctionExpand", "[", 
+       RowBox[{"SphericalBesselY", "[", 
+        RowBox[{"5", ",", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+      RowBox[{"SphericalHarmonicY", "[", 
+       RowBox[{"5", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+      RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+     "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+   RowBox[{
+    SuperscriptBox["\[Kappa]", "2"], 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"FunctionExpand", "[", 
+       RowBox[{"SphericalBesselY", "[", 
+        RowBox[{"5", ",", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+      RowBox[{"SphericalHarmonicY", "[", 
+       RowBox[{"5", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+      RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"5", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, {3.56766189196*^9, 
+   3.567661897913*^9}, 3.592169371086523*^9, {3.592169427286499*^9, 
+   3.592169435851495*^9}, 3.598068000434184*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"256", " ", 
+     SuperscriptBox["\[Kappa]", "6"], " ", 
+     SuperscriptBox["\[Rho]", "7"]}]], 
+   RowBox[{
+    SqrtBox[
+     FractionBox["11", "\[Pi]"]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"30", " ", 
+       RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+      RowBox[{"35", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"3", " ", "\[Theta]"}], "]"}]}], "+", 
+      RowBox[{"63", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"5", " ", "\[Theta]"}], "]"}]}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "4725"}], "+", 
+            RowBox[{"2205", " ", 
+             SuperscriptBox["\[Kappa]", "2"], " ", 
+             SuperscriptBox["\[Rho]", "2"]}], "-", 
+            RowBox[{"120", " ", 
+             SuperscriptBox["\[Kappa]", "4"], " ", 
+             SuperscriptBox["\[Rho]", "4"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[Kappa]", "6"], " ", 
+             SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+         RowBox[{"15", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+          RowBox[{"(", 
+           RowBox[{"315", "-", 
+            RowBox[{"42", " ", 
+             SuperscriptBox["\[Kappa]", "2"], " ", 
+             SuperscriptBox["\[Rho]", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[Kappa]", "4"], " ", 
+             SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+       RowBox[{
+        SuperscriptBox["f", "\[Prime]",
+         MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+      RowBox[{"\[Rho]", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"15", " ", 
+          RowBox[{"(", 
+           RowBox[{"63", "-", 
+            RowBox[{"28", " ", 
+             SuperscriptBox["\[Kappa]", "2"], " ", 
+             SuperscriptBox["\[Rho]", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[Kappa]", "4"], " ", 
+             SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+          RowBox[{"(", 
+           RowBox[{"945", "-", 
+            RowBox[{"105", " ", 
+             SuperscriptBox["\[Kappa]", "2"], " ", 
+             SuperscriptBox["\[Rho]", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[Kappa]", "4"], " ", 
+             SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+       RowBox[{
+        SuperscriptBox["f", "\[Prime]\[Prime]",
+         MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+     ")"}]}]}]}]], "Output",
+ CellChangeTimes->{
+  3.592169440049488*^9, 3.5921697442143316`*^9, 3.5921697880303097`*^9, 
+   3.5921699822142096`*^9, {3.592170017910192*^9, 3.592170023565194*^9}, 
+   3.5931059603684125`*^9, 3.5980680112671843`*^9, 3.5980680993261766`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["\[Kappa]", "6"], " ", 
+     SuperscriptBox["\[Rho]", "7"]}]], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "4725"}], "+", 
+           RowBox[{"2205", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "-", 
+           RowBox[{"120", " ", 
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "6"], " ", 
+            SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+        RowBox[{"15", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+         RowBox[{"(", 
+          RowBox[{"315", "-", 
+           RowBox[{"42", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+      RowBox[{
+       SuperscriptBox["f", "\[Prime]",
+        MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+     RowBox[{"\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"15", " ", 
+         RowBox[{"(", 
+          RowBox[{"63", "-", 
+           RowBox[{"28", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+         RowBox[{"(", 
+          RowBox[{"945", "-", 
+           RowBox[{"105", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+      RowBox[{
+       SuperscriptBox["f", "\[Prime]\[Prime]",
+        MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+    ")"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.592169440049488*^9, 3.5921697442143316`*^9, 3.5921697880303097`*^9, 
+   3.5921699822142096`*^9, {3.592170017910192*^9, 3.592170023565194*^9}, 
+   3.5931059603684125`*^9, 3.5980680112671843`*^9, 3.5980680993301764`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SphericalHarmonicY", "[", 
+  RowBox[{"5", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "16"], " ", 
+  SqrtBox[
+   FractionBox["11", "\[Pi]"]], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", " ", 
+     RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "-", 
+    RowBox[{"70", " ", 
+     SuperscriptBox[
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], "3"]}], "+", 
+    RowBox[{"63", " ", 
+     SuperscriptBox[
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], "5"]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.5980681113471694`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", 
+  RowBox[{"-", "2"}], " ", 
+  SuperscriptBox["\[Kappa]", "6"], " ", 
+  SuperscriptBox["\[Rho]", "7"]}]], "Input",
+ CellChangeTimes->{{3.592169771865323*^9, 3.592169772793317*^9}, 
+   3.5921699788172164`*^9, {3.592170017337197*^9, 3.5921700223301945`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "4725"}], "+", 
+        RowBox[{"2205", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"120", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+     RowBox[{"15", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"315", "-", 
+        RowBox[{"42", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"15", " ", 
+      RowBox[{"(", 
+       RowBox[{"63", "-", 
+        RowBox[{"28", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"945", "-", 
+        RowBox[{"105", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.59216978806631*^9, {3.592169979640211*^9, 3.5921699828182096`*^9}, {
+   3.592170018951191*^9, 3.592170025047188*^9}, 3.5931059604084444`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["I-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.567661890325*^9, 3.5921694078395033`*^9, {3.5921694390524883`*^9, 
+   3.5921694468644896`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"6", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"6", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"6", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"6", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"6", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, {3.56766189196*^9, 
+   3.567661897913*^9}, 3.592169371086523*^9, {3.592169427286499*^9, 
+   3.5921694550194845`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["\[Kappa]", "7"], " ", 
+     SuperscriptBox["\[Rho]", "8"]}]], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"21", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "2970"}], "+", 
+           RowBox[{"1395", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "-", 
+           RowBox[{"80", " ", 
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "6"], " ", 
+            SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+        RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "62370"}], "+", 
+           RowBox[{"8505", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "-", 
+           RowBox[{"231", " ", 
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "6"], " ", 
+            SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+      RowBox[{
+       SuperscriptBox["f", "\[Prime]",
+        MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+     RowBox[{"\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"10395", "-", 
+           RowBox[{"4725", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "+", 
+           RowBox[{"210", " ", 
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}], "-", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "6"], " ", 
+            SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+        RowBox[{"21", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+         RowBox[{"(", 
+          RowBox[{"495", "-", 
+           RowBox[{"60", " ", 
+            SuperscriptBox["\[Kappa]", "2"], " ", 
+            SuperscriptBox["\[Rho]", "2"]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[Kappa]", "4"], " ", 
+            SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+      RowBox[{
+       SuperscriptBox["f", "\[Prime]\[Prime]",
+        MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], 
+    ")"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.5921694615744815`*^9, 3.5921697493063297`*^9, 3.592169788960309*^9, 
+   3.592170071038164*^9, 3.593105965674824*^9, {3.5965919794004087`*^9, 
+   3.5965919987033863`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", 
+  RowBox[{"-", "2"}], " ", 
+  SuperscriptBox["\[Kappa]", "7"], " ", 
+  SuperscriptBox["\[Rho]", "8"]}]], "Input",
+ CellChangeTimes->{{3.5921697778573194`*^9, 3.5921697785773196`*^9}, 
+   3.59217007021717*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"21", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "2970"}], "+", 
+        RowBox[{"1395", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"80", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "62370"}], "+", 
+        RowBox[{"8505", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"231", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"10395", "-", 
+        RowBox[{"4725", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"210", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"21", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"495", "-", 
+        RowBox[{"60", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.5921697889883156`*^9, 3.5921700721851687`*^9, 3.5931059657158327`*^9, {
+   3.5965919945253954`*^9, 3.596592000064391*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["K-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.567661890325*^9, 3.5921694078395033`*^9, {3.5921694390524883`*^9, 
+   3.5921694745274696`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"7", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"7", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"7", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"7", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"7", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, {3.56766189196*^9, 
+   3.567661897913*^9}, 3.592169371086523*^9, {3.592169427286499*^9, 
+   3.59216948452347*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "8"], " ", 
+    SuperscriptBox["\[Rho]", "9"]}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"945945", "-", 
+          RowBox[{"446985", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"26775", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "-", 
+          RowBox[{"406", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "8"], " ", 
+           SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"7", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{"135135", "-", 
+          RowBox[{"18810", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"558", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "-", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"7", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "19305"}], "+", 
+          RowBox[{"8910", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "-", 
+          RowBox[{"450", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "+", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "135135"}], "+", 
+          RowBox[{"17325", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "-", 
+          RowBox[{"378", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.592169496195464*^9, 3.592169755823331*^9, 
+  3.5921697890633087`*^9, 3.5931059722887955`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", "2", " ", 
+  SuperscriptBox["\[Kappa]", "8"], " ", 
+  SuperscriptBox["\[Rho]", "9"]}]], "Input",
+ CellChangeTimes->{{3.592169782877317*^9, 3.5921697834973164`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"945945", "-", 
+        RowBox[{"446985", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"26775", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{"406", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "8"], " ", 
+         SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"7", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"135135", "-", 
+        RowBox[{"18810", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"558", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{"4", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "+", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"7", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "19305"}], "+", 
+        RowBox[{"8910", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"450", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "135135"}], "+", 
+        RowBox[{"17325", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"378", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.5921697891123095`*^9, 3.593105972332739*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L-Wave", "Subsection",
+ CellChangeTimes->{{3.5676598130439997`*^9, 3.567659814492*^9}, 
+   3.597095911012637*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"Laplacian", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"8", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"8", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[Rho]", ",", "\[Theta]", ",", "\[Phi]"}], "}"}], ",", 
+      "\"\<Spherical\>\""}], " ", "]"}], " ", "+", " ", 
+    RowBox[{
+     SuperscriptBox["\[Kappa]", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"FunctionExpand", "[", 
+        RowBox[{"SphericalBesselY", "[", 
+         RowBox[{"8", ",", 
+          RowBox[{"\[Kappa]", " ", "\[Rho]"}]}], "]"}], "]"}], " ", 
+       RowBox[{"SphericalHarmonicY", "[", 
+        RowBox[{"8", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}], " ", 
+       RowBox[{"f", "[", "\[Rho]", "]"}]}], ")"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{"%", "/", 
+    RowBox[{"SphericalHarmonicY", "[", 
+     RowBox[{"8", ",", "0", ",", "\[Theta]", ",", "\[Phi]"}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.505443083052*^9, 3.505443134426*^9}, {3.505468049133*^9,
+    3.50546806998*^9}, {3.505468281757*^9, 3.505468284477*^9}, {
+   3.505468438533*^9, 3.505468441141*^9}, {3.505624060674*^9, 
+   3.505624061026*^9}, {3.505624118106*^9, 3.505624121601*^9}, {
+   3.505625336138*^9, 3.505625341882*^9}, {3.505625447962*^9, 
+   3.5056254481140003`*^9}, {3.5056255450179996`*^9, 3.50562554809*^9}, {
+   3.5056256009449997`*^9, 3.505625602075*^9}, {3.5056256371940002`*^9, 
+   3.505625662602*^9}, {3.5056258577790003`*^9, 3.505625858394*^9}, {
+   3.5447123792790956`*^9, 3.544712391407789*^9}, {3.5447124560454865`*^9, 
+   3.544712459806701*^9}, 3.544747864083759*^9, 3.54484186988125*^9, {
+   3.567659789848*^9, 3.567659802983*^9}, 3.5921693692765284`*^9, {
+   3.5970959148076277`*^9, 3.597095922066622*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[Kappa]", "9"], " ", 
+    SuperscriptBox["\[Rho]", "10"]}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"9", " ", 
+        RowBox[{"(", 
+         RowBox[{"1801800", "-", 
+          RowBox[{"855855", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"53130", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "-", 
+          RowBox[{"910", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}], "+", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["\[Kappa]", "8"], " ", 
+           SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{"16216200", "-", 
+          RowBox[{"2297295", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"72765", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "-", 
+          RowBox[{"666", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "8"], " ", 
+           SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"2027025", "-", 
+          RowBox[{"945945", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "+", 
+          RowBox[{"51975", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "-", 
+          RowBox[{"630", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}], "+", 
+          RowBox[{
+           SuperscriptBox["\[Kappa]", "8"], " ", 
+           SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+       RowBox[{"9", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "225225"}], "+", 
+          RowBox[{"30030", " ", 
+           SuperscriptBox["\[Kappa]", "2"], " ", 
+           SuperscriptBox["\[Rho]", "2"]}], "-", 
+          RowBox[{"770", " ", 
+           SuperscriptBox["\[Kappa]", "4"], " ", 
+           SuperscriptBox["\[Rho]", "4"]}], "+", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["\[Kappa]", "6"], " ", 
+           SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{
+      SuperscriptBox["f", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "\[Rho]", "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.567659803545*^9, 3.5921693794105186`*^9, 
+  3.5921697382893395`*^9, 3.5921697856883106`*^9, 3.593105954203635*^9, 
+  3.5970959366456137`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "*", "2", " ", 
+  SuperscriptBox["\[Kappa]", "9"], " ", 
+  SuperscriptBox["\[Rho]", "10"]}]], "Input",
+ CellChangeTimes->{3.5970959456926007`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"9", " ", 
+      RowBox[{"(", 
+       RowBox[{"1801800", "-", 
+        RowBox[{"855855", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"53130", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{"910", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox["\[Kappa]", "8"], " ", 
+         SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "+", 
+     RowBox[{"\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{"16216200", "-", 
+        RowBox[{"2297295", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"72765", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{"666", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "8"], " ", 
+         SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}], "-", 
+  RowBox[{"\[Rho]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"2027025", "-", 
+        RowBox[{"945945", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "+", 
+        RowBox[{"51975", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "-", 
+        RowBox[{"630", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Kappa]", "8"], " ", 
+         SuperscriptBox["\[Rho]", "8"]}]}], ")"}], " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}], "-", 
+     RowBox[{"9", " ", "\[Kappa]", " ", "\[Rho]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "225225"}], "+", 
+        RowBox[{"30030", " ", 
+         SuperscriptBox["\[Kappa]", "2"], " ", 
+         SuperscriptBox["\[Rho]", "2"]}], "-", 
+        RowBox[{"770", " ", 
+         SuperscriptBox["\[Kappa]", "4"], " ", 
+         SuperscriptBox["\[Rho]", "4"]}], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox["\[Kappa]", "6"], " ", 
+         SuperscriptBox["\[Rho]", "6"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Kappa]", " ", "\[Rho]"}], "]"}]}]}], ")"}], " ", 
+   RowBox[{
+    SuperscriptBox["f", "\[Prime]\[Prime]",
+     MultilineFunction->None], "[", "\[Rho]", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.5970959464525995`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1010, 844},
+WindowMargins->{{350, Automatic}, {Automatic, 20}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 1568, 45, 33, "Input"],
+Cell[2138, 69, 1599, 45, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3774, 119, 1563, 43, 33, "Input"],
+Cell[5340, 164, 1663, 47, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7040, 216, 146, 3, 31, "Input"],
+Cell[7189, 221, 1606, 45, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8832, 271, 118, 2, 31, "Input"],
+Cell[8953, 275, 234, 4, 31, "Output"]
+}, Open  ]],
+Cell[9202, 282, 145, 2, 72, "Input"],
+Cell[CellGroupData[{
+Cell[9372, 288, 116, 2, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[9513, 294, 2183, 48, 90, "Input"],
+Cell[11699, 344, 728, 18, 48, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12476, 368, 93, 1, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[12594, 373, 2139, 47, 90, "Input"],
+Cell[14736, 422, 1382, 38, 53, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16167, 466, 93, 1, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[16285, 471, 2090, 46, 90, "Input"],
+Cell[18378, 519, 1773, 49, 53, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20200, 574, 116, 2, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[20341, 580, 2131, 47, 90, "Input"],
+Cell[22475, 629, 2143, 58, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24655, 692, 189, 4, 31, "Input"],
+Cell[24847, 698, 1868, 52, 55, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26764, 756, 140, 2, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[26929, 762, 2185, 48, 90, "Input"],
+Cell[29117, 812, 2317, 62, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31471, 879, 195, 4, 31, "Input"],
+Cell[31669, 885, 2028, 56, 55, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33746, 947, 164, 2, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[33935, 953, 2160, 47, 90, "Input"],
+Cell[36098, 1002, 3279, 86, 103, "Output"],
+Cell[39380, 1090, 2808, 73, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42225, 1168, 126, 2, 31, "Input"],
+Cell[42354, 1172, 476, 15, 57, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42867, 1192, 289, 6, 31, "Input"],
+Cell[43159, 1200, 2361, 64, 55, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45569, 1270, 194, 3, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[45788, 1277, 2183, 48, 90, "Input"],
+Cell[47974, 1327, 3062, 80, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51073, 1412, 242, 6, 31, "Input"],
+Cell[51318, 1420, 2623, 71, 55, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53990, 1497, 194, 3, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[54209, 1504, 2180, 48, 90, "Input"],
+Cell[56392, 1554, 3181, 82, 94, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[59610, 1641, 197, 4, 31, "Input"],
+Cell[59810, 1647, 2825, 75, 55, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62684, 1728, 119, 2, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[62828, 1734, 2142, 47, 90, "Input"],
+Cell[64973, 1783, 3479, 88, 116, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68489, 1876, 174, 4, 31, "Input"],
+Cell[68666, 1882, 3042, 80, 99, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
